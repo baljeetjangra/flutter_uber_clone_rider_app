@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/Screens/RegistrationScreen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
+
+  static const String idScreen = "login";
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +81,7 @@ class LoginScreen extends StatelessWidget {
               ),
               ),
               TextButton(onPressed: (){
-                print("register");
+                Navigator.pushNamedAndRemoveUntil(context, RegistrationScreen.idScreen, (route) => false);
               }, child: Text(
                 "Don't have an Account? Register here."
               ),
