@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/Screens/LoginScreen.dart';
 import 'package:flutter_projects/Screens/MainScreen.dart';
+import 'package:flutter_projects/Screens/RegistrationScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Brand-Regular",
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: RegistrationScreen(),
       debugShowCheckedModeBanner: false,
     );
 
